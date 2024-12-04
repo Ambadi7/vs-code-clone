@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Visual studio Code</title>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                tc: '#03040C',
+              },
+              fontFamily: {
+                Poppins: "Poppins",
+                Roboto: "Roboto",
+                Ubuntu: "Ubuntu",
+
+              },
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <!-- navbar -->
+     <nav class="flex fixed w-full h-16 bg-tc items-center px-4 lg:px-28 font-Ubuntu">
+        <div class="flex gap-6 justify-between w-full">
+            <div class="flex gap-6 ">
+                <div class="flex gap-2 ">
+                    <!-- vs code logo  -->
+                    <div class="h-8">
+                        <img class="h-6" src="/icons/apple-touch-icon.png" alt="">
+                    </div>
+                    <div>
+                        <p class="text-white font-medium text-xl">Visual Studio Code</p>
+                    </div>
+                </div>
+                <!-- sub-menu -->
+                <div class="hidden  lg:flex gap-6 items-center ">
+                    <div class="flex gap-6">
+                        <ul class="text-slate-400 flex gap-6 font-medium">
+                            <li>Docs</li>
+                            <li>Updates</li>
+                            <li>Blog</li>
+                            <li>API</li>
+                            <li>Extensions</li>
+                            <li>FAQ</li>
+                            <li>Github Copilot</li>
+                        </ul>
+                    </div>
+                    <!-- dark theme -->
+                     <div>
+                        <img class="h-[24px]" src="/icons/theme-light.jpeg" alt="">
+                     </div>
+                </div>
+            </div>
+
+            <!-- 2nd half -->
+             <div class="hidden lg:flex gap-2 items-center h-8">
+                <!-- seach -->
+                <div class="flex h-8 w-48 border border-gray-600 rounded items-center">
+                    <img class="h-[16px] pl-2" src="/icons/search-dark.jpeg" alt="">
+                    <p class="pl-2 text-slate-400 text-sm font-medium">Search Docs</p>
+
+                </div>
+                <div>
+                    <button class="bg-blue-600 text-white text-sm font-semibold h-8 rounded w-[100px]">Download</button>
+                </div>
+             </div>
+             <!-- menu -->
+             <div class=" flex lg:hidden items-center">
+                <i class="fa-solid fa-bars fa-xl " style="color: #ffffff;"></i>
+             </div>
+             
+        </div>
+
+     </nav>
+     <!-- nav end -->
+      <div class=" w-full h-full bg-tc px-4 lg:px-28 font-Ubuntu ">
+        <!-- 1 -->
+        <div class="w-full">
+            <div>
+                <div class="pb-8 pt-48">
+                    <div class="flex w-full justify-center">
+                        <p class=" text-white  font-bold text-4xl lg:text-6xl">Code faster with AI</p>
+                    </div>
+                    <div class=" text-slate-400 text-xl lg:text-2xl font-semibold">
+                        <div class="flex justify-center">
+                            <p>Visual Studio Code with GitHub Copilot supercharges your</p>
+                        </div>
+                        <div class="flex justify-center">
+                            <p class="">code with AI-powered suggestions, right in your editor.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div class="flex justify-center gap-3">
+                            <button class="bg-blue-500 text-white text-medium font-semibold h-12 rounded w-[200px]">Download for Windows</button>
+                            <button class="bg-neutral-700 border border-gray-600 text-white text-medium font-semibold h-12 rounded w-[200px]">Try GitHub Copilot</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center pb-12">
+                
+                <p class="text-blue-400 underline decoration-solid text-xs">Web, Insiders edition </P><span class="text-slate-400 text-xs"> , or  </span><p class="pl-1 text-blue-400 underline decoration-solid text-xs"> other platforms
+                </p>
+            </div>
+            
+        </div>
+        <!-- 2 -->
+        <div >
+            <!-- img -->
+            <div class="pb-20">
+                <img class="w-auto h-auto" src="/icons/home-screenshot-copilot.png" alt="">
+            </div>
+            <div class="flex flex-col gap-4 lg:flex-row justify-between pb:6 lg:pb-36">
+                <!-- col contents -->
+                <div class="w-[330px] ">
+                    <p class="text-2xl lg:text-3xl  text-white pb-6">Code with GitHub Copilot</p>
+                    <div class="font-medium">
+                        <div>
+                            <div>
+                                <p class="text-slate-400 pb-8">Write code faster and smarter with GitHub Copilot, your AI pair programmer.</p>
+                                <span class="pb-8 text-blue-400 underline decoration-solid">Try GitHub Copilot free for 30 days</span>
+                            </div>
+                            <div>
+                                <p class="text-slate-400 pb-8"><span class="text-blue-400 underline decoration-solid">Completions</span> present suggestions automatically to help you code more efficiently.</p>
+
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <p class="text-slate-400 pb-8"><span class="text-blue-400 underline decoration-solid">Copilot </span> Chat understands the context of your code, workspace, extensions, settings, and more.</p>
+                            </div>
+                            <div>
+                                <p class="text-slate-400"><span class="text-blue-400 underline decoration-solid">Inline Chat </span> enables you to iteratively generate edits and get answers to quick questions, directly on your code.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- img -->
+                <div>
+                    <img class="w-[714px] h-[345px]" src="/icons/swimlane-copilot.png" alt="">
+                </div>
+
+            </div>
+        </div>
+         <!-- 3 -->
+        <div class="flex flex-col lg:flex-row justify-between gap-10 pb:6 lg:pb-36">
+            <!-- contents -->
+            <div class="lg:w-2/6 ">
+                <p class="text-2xl lg:text-3xl  text-white pb-6">Code in any language</p>
+                <p class="text-slate-400 font-medium pb-8">VS Code supports almost every major programming language. Several ship in the box, like JavaScript, TypeScript, CSS, and HTML, but extensions for others can be found in the VS Code Marketplace.</p>
+
+            </div>
+            <!-- p language -->
+            <div class=" lg:w-4/6 grid grid-cols-2 lg:grid-cols-3 grid-flow-row gap-0 lg:gap-8 text-slate-400 font-mono">
+                <div class="flex items-center"><img class="h-10" src="/icons/language-js.png" alt="">JavaScript</div>
+                <div class="flex items-center"><img class="h-10" src="/icons/language-ts.png" alt="">TypeScript</div>
+                <div class="flex items-center"><img class="h-10" src="/icons/language-python.png" alt="">Python</div>
+                <div class="flex items-center"><img class="h-10" src="/icons/language-cs.png" alt="">C#</div>
+                <div class="flex items-center"><img class="h-10" src="/icons/language-cpp.png" alt="">C++</div>
+                <div class="flex items-center"><img class="h-10" src="/icons/language-html.png" alt="">HTML</div>
+                <div class="flex items-center"><img class="h-10" src="/icons/language-java.png" alt="">Java</div>
+                <div class="flex items-center"><img class="h-10" src="/icons/language-json.png" alt="">JSON</div>
+                <div class="flex items-center"><img class="h-10" src="/icons/language-php.png" alt="">PHP</div>
+                <div class="flex items-center"><img class="h-10" src="/icons/language-markdown.png" alt="">Markdown</div>
+                <div class="flex items-center"><img class="h-10" src="/icons/language-powershell.png" alt="">Powershell</div>
+                <div class="flex items-center"><img class="h-10" src="/icons/language-yaml.png" alt="">YAML</div>
+
+
+            </div>
+
+        </div>
+        <!-- 4 -->
+        <div class="flex flex-col lg:flex-row justify-between pb-6 lg:pb-36">
+            <!-- left contents -->
+            <div class="w-[330px]">
+                <div>
+                    <p class="text-2xl lg:text-3xl  text-white pb-6">Code with Extensions</p>
+                    <p class="text-slate-400 font-medium pb-4">Whether you're a beginner or an expert, we've got you covered. Choose from hundreds of extensions to power up your VS Code experience.</p>
+                </div>
+                <div>
+                    <p class="text-blue-400 underline decoration-solid font-medium">Learn more about extensions</p>
+                </div>
+            </div>
+            <div class="">
+                <!-- 1 row -->
+                <div class="flex gap-4">
+                    <div class="flex border border-slate-700 items-center gap-2 pl-4 justify-center rounded-lg w-56 h-28">
+                        <div>
+                            <img class="h-10 " src="/icons/python-extension.png" alt="">
+                        </div>
+                        <div class="hidden lg:flex lg:flex-col w-32 ">
+                            <p class="font-medium  text-white">Python</p>
+                            <p class="text-sm text-slate-400 font-medium">Adds rich language support for Python</p>
+                        </div>
+                    </div>
+                    <div class="flex border border-slate-700 items-center gap-2 pl-4 justify-center  rounded-lg w-56 h-28">
+                        <div>
+                            <img class="h-10 " src="/icons/copilot-extension.png" alt="">
+                        </div>
+                        <div class="hidden lg:flex lg:flex-col w-32 ">
+                            <p class="font-medium  text-white">GitHub Copilot</p>
+                            <p class="text-sm text-slate-400 font-medium">Your AI pair programmer</p>
+                        </div>
+                    </div>
+                    <div class="flex border border-slate-700 items-center gap-2 pl-4 justify-center  rounded-lg w-56 h-28">
+                        <div>
+                            <img class="h-10 " src="/icons/c-extension.png" alt="">
+                        </div>
+                        <div class="hidden  lg:flex lg:flex-col w-32 ">
+                            <p class="font-medium  text-white">C/C++</p>
+                            <p class="text-sm text-slate-400 font-medium">Adds rich language support for C/C++</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2 row -->
+
+                <div class="flex gap-4  pt-4 pb-4">
+                    <div class="flex border border-slate-700 items-center gap-2 pl-4 justify-center  rounded-lg w-56 h-28">
+                        <div>
+                            <img class="h-10 rounded" src="/icons/jupyter-extension.png" alt="">
+                        </div>
+                        <div class="hidden lg:flex lg:flex-col w-32 ">
+                            <p class="font-medium  text-white">Jupyter</p>
+                            <p class="text-sm text-slate-400 font-medium">Language support for Jupyter Notebooks</p>
+                        </div>
+                    </div>
+                    <div class="flex border border-slate-700 items-center gap-2 pl-4 justify-center  rounded-lg w-56 h-28">
+                        <div>
+                            <img class="h-10 " src="/icons/gitlens-extension.png" alt="">
+                        </div>
+                        <div class="hidden lg:flex lg:flex-col w-32 ">
+                            <p class="font-medium  text-white">GitLens</p>
+                            <p class="text-sm text-slate-400 font-medium">Supercharge your Git experience</p>
+                        </div>
+                    </div>
+                    <div class="flex border border-slate-700 items-center gap-2 pl-4 justify-center rounded-lg w-56 h-28">
+                        <div>
+                            <img class="h-10 " src="/icons/cs-dev-kit-extension.png" alt="">
+                        </div>
+                        <div class="hidden  lg:flex lg:flex-col  w-32 ">
+                            <p class="font-medium  text-white">C# Dev Kit</p>
+                            <p class="text-sm text-slate-400 font-medium">Powerful tools for your C# environment</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 row -->
+
+                <div class="flex gap-4">
+                    <div class="flex border border-slate-700 items-center gap-2 pl-4 justify-center rounded-lg w-56 h-28">
+                        <div>
+                            <img class="h-10 " src="/icons/github-pull-requests-extension.png" alt="">
+                        </div>
+                        <div class="hidden  lg:flex lg:flex-col  w-32 ">
+                            <p class="font-medium  text-white">GitHub Codespaces</p>
+                            <p class="text-sm text-slate-400 font-medium">Fully configured dev environments in the cloud</p>
+                        </div>
+                    </div>
+                    <div class="flex border border-slate-700 items-center gap-2 pl-4 justify-center rounded-lg w-56 h-28">
+                        <div>
+                            <img class="h-10 " src="/icons/github-pull-requests-extension.png" alt="">
+                        </div>
+                        <div class="hidden  lg:flex lg:flex-col  w-32 ">
+                            <p class="font-medium  text-white">GitHub Pull Requests</p>
+                            <p class="text-sm text-slate-400 font-medium">Collaborate on issues and pull requests</p>
+                        </div>
+                    </div>
+                    <div class="flex border border-slate-700 items-center gap-2 pl-4 justify-center rounded-lg w-56 h-28">
+                        <div>
+                            <img class="h-10 " src="/icons/remote-extension.png" alt="">
+                        </div>
+                        <div class="hidden  lg:flex lg:flex-col  w-32 ">
+                            <p class="font-medium  text-white">Remote Development</p>
+                            <p class="text-sm text-slate-400 font-medium">Open folders in a container on a remote machine</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--  -->
+                <div class="flex justify-center"><p class="text-sm text-slate-400 font-medium">View 50k+ extensions in the <span class="text-blue-400 underline decoration-solid">Extension Marketplace</span></p></div>
+
+
+            </div>
+
+        </div>
+        <!-- 5 -->
+        <div>
+            <div class="flex flex-col lg:flex-row justify-between pb-6 lg:pb-48">
+                <div class="w-[330px]">
+                    <!-- top contents -->
+                   <div>
+                    <p class="text-2xl lg:text-3xl  text-white pb-6">Fully customizable</p>
+                    <p class=" text-slate-400 font-medium pb-8">Customize your VS Code UI and layout so that it fits your coding style.</p>
+                   </div> 
+
+                   <!-- 2 contents -->
+                    <div>
+                        <p class=" text-slate-400 font-medium pb-8"><span class="text-blue-400 underline decoration-solid">Color themes </span> let you modify the colors in VS Code's user interface to suit your preferences and work environment.</p>
+                        <p class=" text-slate-400 font-medium pb-8"><span class="text-blue-400 underline decoration-solid">Settings Sync</span>  enables you to share your user settings across your VS Code instances with the Settings Sync feature.</p>
+                        <p class=" text-slate-400 font-medium pb-8"><span class="text-blue-400 underline decoration-solid">Profiles</span> let you create sets of customizations and quickly switch between them or share them with others.</p>
+                    </div>
+                </div>
+                <div class="">
+                    <div>
+                        <img class="w-[714px]" src="/icons/swimlane-customized.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2nd row -->
+            <div class="flex flex-col lg:flex-row justify-between ">
+                <div class="w-[330px]">
+                    <!-- top contents -->
+                   <div>
+                    <p class="text-2xl lg:text-3xl  text-white pb-6">Code anywhere</p>
+                    <p class=" text-slate-400 font-medium pb-8">Code wherever you're most productive, whether you're connected to the cloud, a remote repository, or in the browser with VS Code for the Web (vscode.dev).</p>
+                   </div> 
+
+                   <!-- 2 contents -->
+                    <div>
+                        <p class=" text-slate-400 font-medium pb-8"><span class="text-blue-400 underline decoration-solid">Built-in Source Control</span>  empowers you with Git support out-of-the-box. Many other source control providers are available through extensions.</p>
+                        <p class=" text-slate-400 font-medium pb-8"><span class="text-blue-400 underline decoration-solid">GitHub Codespaces</span>provides cloud-powered development environments for any activity - whether it's a long-term project, or a short-term task like reviewing a pull request.</p>
+    
+                    </div>
+                </div>
+                <div>
+                    <div class=" pb-6 lg:pb-48">
+                        <img class="w-[714px]" src="/icons/swimlane-customized.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 6 -->
+         <div>
+            <div class="justify-center">
+                <p class="pb-8 text-2xl lg:text-3xl  text-white flex justify-center">Code with rich features</p>
+                <p class="text-slate-400 font-medium flex justify-center">There's a lot more to an editor. Whether it's using built-in features or</p>
+                <p class="text-slate-400 font-medium flex justify-center">rich extensions, there's something for everyone.</p>
+
+            </div>
+            <div class="w-full grid grod-cols-1 lg:grid-cols-4 grid-flow-row gap-4 pt-16">
+                <!-- cards -->
+                <div class="rounded-lg bg-gray-900 border border-slate-700 pl-4 h-[240px] w-auto pt-4">
+                    <div class="h-12 w-12 border-slate-700 rounded-lg flex justify-center items-center  bg-black">
+                        <img src="/icons/codicon-terminal.jpeg" class="h-6" alt="">
+                    </div>
+                    <div>
+                        <p class="font-medium text-white pb-4 pt-4" >Integrated terminal</p>
+                        <p class="text-slate-400  w-[215px]">Use your favorite shell whether it's zsh, pwsh, or git bash, all inside the editor.</p>
+                    </div>
+                </div>
+                <div class="rounded-lg bg-gray-900 border border-slate-700 pl-4 h-[240px] w-auto pt-4">
+                    <div class="h-12 w-12 border-slate-700 rounded-lg flex justify-center items-center  bg-black">
+                        <img src="/icons/codicon-debug.jpeg" class="h-6" alt="">
+                    </div>
+                    <div>
+                        <p class="font-medium text-white pb-4 pt-4" >Run code</p>
+                        <p class="text-slate-400  w-[215px]">Run and debug your code without leaving your editor.</p>
+                    </div>
+                </div>
+                <div class="rounded-lg bg-gray-900 border border-slate-700 pl-4 h-[240px] w-auto pt-4">
+                    <div class="h-12 w-12 border-slate-700 rounded-lg flex justify-center items-center  bg-black">
+                        <img src="/icons/codicon-version-control.jpeg" class="h-6" alt="">
+                    </div>
+                    <div>
+                        <p class="font-medium text-white pb-4 pt-4" >Version control</p>
+                        <p class="text-slate-400  w-[215px]">Built-in support for git and many other source control providers.</p>
+                    </div>
+                </div>
+                <div class="rounded-lg bg-gray-900 border border-slate-700 pl-4 h-[240px] w-auto pt-4">
+                    <div class="h-12 w-12 border-slate-700 rounded-lg flex justify-center items-center  bg-black">
+                        <img src="/icons/codicon-build-tasks.jpeg" class="h-6" alt="">
+                    </div>
+                    <div>
+                        <p class="font-medium text-white pb-4 pt-4" >Build tasks</p>
+                        <p class="text-slate-400  w-[215px]">Run tools and analyze their results from within VS Code.</p>
+                    </div>
+                </div>
+
+                <div class="rounded-lg bg-gray-900 border border-slate-700 pl-4 h-[240px] w-auto pt-4">
+                    <div class="h-12 w-12 border-slate-700 rounded-lg flex justify-center items-center  bg-black">
+                        <img src="/icons/codicon-local-history.jpeg" class="h-6" alt="">
+                    </div>
+                    <div>
+                        <p class="font-medium text-white pb-4 pt-4" >Local history</p>
+                        <p class="text-slate-400  w-[215px]">Never lose your changes with automatically tracked local history.</p>
+                    </div>
+                </div>
+                <div class="rounded-lg bg-gray-900 border border-slate-700 pl-4 h-[240px] w-auto pt-4">
+                    <div class="h-12 w-12 border-slate-700 rounded-lg flex justify-center items-center  bg-black">
+                        <img src="/icons/codicon-themes.jpeg" class="h-6" alt="">
+                    </div>
+                    <div>
+                        <p class="font-medium text-white pb-4 pt-4" >Themes</p>
+                        <p class="text-slate-400  w-[215px]">Your theme is an extension of your personality. Add some flair to your editor and add your touch.</p>
+                    </div>
+                </div>
+                <div class="rounded-lg bg-gray-900 border border-slate-700 pl-4 h-[240px] w-auto pt-4">
+                    <div class="h-12 w-12 border-slate-700 rounded-lg flex justify-center items-center  bg-black">
+                        <img src="/icons/codicon-accessibility.jpeg" class="h-6" alt="">
+                    </div>
+                    <div>
+                        <p class="font-medium text-white pb-4 pt-4" >Accessibility</p>
+                        <p class="text-slate-400  w-[215px]">Optimized experience for screen readers, high contrast themes, and keyboard-only navigation.</p>
+                    </div>
+                </div>
+                <div class="rounded-lg bg-gray-900 border border-slate-700 pl-4 h-[240px] w-auto pt-4">
+                    <div class="h-12 w-12 border-slate-700 rounded-lg flex justify-center items-center  bg-black">
+                        <img src="/icons/codicon-web.jpeg" class="h-6" alt="">
+                    </div>
+                    <div>
+                        <p class="font-medium text-white pb-4 pt-4" >Web support</p>
+                        <p class="text-slate-400  w-[215px]">Whether you are on your phone, tablet, or desktop, you can access your code from anywhere.</p>
+                    </div>
+                </div>
+
+            </div>
+         </div>
+
+         <!-- footer -->
+          <div>
+            <div class="flex justify-between pt-16">
+                <div class="flex gap-4 items-center">
+                    <img class="h-4" src="/icons/x-icon.jpeg" alt="">
+                    <img src="/icons/github-icon.jpeg" alt="">
+                    <img src="/icons/youtube-icon.jpeg" alt="">
+                </div>
+
+                <div>
+                    <img src="/icons/microsoft.jpeg" alt="">
+                </div>
+            </div>
+
+            <div class="flex gap-4 text-slate-400 text-sm pt-6 pb-20">
+                <p>Support</p>
+                <p>Privacy</p>
+                <p>Terms of Use</p>
+                <p>Licences</p>
+            </div>
+          </div>
+      </div>
+    
+</body>
+</html>
